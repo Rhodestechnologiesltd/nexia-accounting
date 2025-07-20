@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+            <xpath expr="//div[hasclass('page')]" position="after">
+                <div t-if="o.eInvoice_status == 'success'">
+                    <h5>
+                        <span>Fiscalised with MRA eInvoicing</span>
+                    </h5>
+                    <div>
+                        <img t-att-src="image_data_uri(o.qr_code)" width="200px" height="200px"/>
+                    </div>
+                    <!-- <div>
+                        <span><b>IRN:</b> <t t-esc="o.irn"/></span>
+                    </div> -->
+                </div>
+                <div t-else="">
+                    <h3>
+                        <span>Not Yet Fiscalized</span>
+                    </h3>
+                    <!-- <div>
+                        <span><b>IRN:</b> <t t-esc="o.irn"/></span>
+                    </div> -->
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

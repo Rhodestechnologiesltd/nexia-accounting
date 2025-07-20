@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.module.category" id="module_mra_einvoicing">
+        <field name="name">MRA eInvoicing</field>
+        <field name="description">MRA eInvoicing</field>
+        <field name="sequence">50</field>
+    </record>
+
+    <record id="group_allow_mra_einvoicing" model="res.groups">
+        <field name="name">Fiscalise invoices on MRA eInvoicing</field>
+        <field name="category_id" ref="module_mra_einvoicing" />
+        <field name="implied_ids" eval="[(4,ref('account.group_account_invoice'))]" />
+    </record>
+
+    <record id="group_allow_show_mra_einvoicing_logs" model="res.groups">
+        <field name="name">See MRA eInvoicing API Logs</field>
+        <field name="category_id" ref="module_mra_einvoicing" />
+    </record>
+
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.einvoicing</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="trade_name"/>
+                <field name="brn"/>
+                <field name="transaction_type"/>
+                <field name="buyer_type"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_normal_form_view" model="ir.ui.view">
+        <field name="name">product.product.form.inherit.einvoicing</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='default_code']" position="after">
+                <field name="tax_code"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

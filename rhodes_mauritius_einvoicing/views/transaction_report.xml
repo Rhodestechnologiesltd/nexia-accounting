@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_mra_transaction_report_tree" model="ir.ui.view">
+        <field name="name">mra.transaction.report.tree</field>
+        <field name="model">account.move</field>
+        <field name="arch" type="xml">
+            <tree string="MRA Transaction Report" create="0" edit="0" delete="0" default_order="counter desc">
+                <field name='counter' string="Counter No."/>
+                <field name='name' string="Invoice Reference"/>
+                <field name='invoice_date'/>
+                <field name='transaction_type' optional="hide"/>
+                <field name='invoice_type_desc'/>
+                <field name='irn'/>
+                <field name='eInvoice_status'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_mra_transaction_report" model="ir.actions.act_window">
+        <field name="name">MRA Transaction Report</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_mra_transaction_report_tree"/>
+        <field name="domain">[('state', '=' , 'posted'), ('move_type', 'in', ['out_invoice', 'out_refund', 'in_refund', 'in_invoice'])]</field>
+        <field name="context">{'search_default_group_invoice_type': 1}</field>
+    </record>
+    
+    <menuitem
+        id="menu_transaction_report"
+        name="Transaction Report"
+        sequence="34"
+        parent="account.menu_finance"
+        action="rhodes_mauritius_einvoicing.action_mra_transaction_report"
+        groups="rhodes_mauritius_einvoicing.group_allow_show_mra_einvoicing_logs"/>
+
+</odoo>

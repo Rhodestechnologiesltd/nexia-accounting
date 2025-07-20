@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Menus -->
+    <menuitem
+        id="dh_menu_mauritius_einvoicing"
+        name="Mauritius e-Invoicing"
+        sequence="10"
+        web_icon="static/description/mra-logo.jpg"
+        groups="rhodes_mauritius_einvoicing.group_allow_show_mra_einvoicing_logs"/>
+
+    <menuitem
+        id="dh_api_logs_menu"
+        name="MRA API Logs"
+        sequence="1"
+        parent="rhodes_mauritius_einvoicing.dh_menu_mauritius_einvoicing"
+        action="rhodes_mauritius_einvoicing.action_mra_api_logs"
+        groups="rhodes_mauritius_einvoicing.group_allow_show_mra_einvoicing_logs"/>
+
+    <!-- <menuitem
+        id="dh_api_logs_menu"
+        name="MRA API Logs"
+        sequence="1"
+        parent="rhodes_mauritius_einvoicing.dh_menu_mauritius_einvoicing"
+        action="rhodes_mauritius_einvoicing.action_mra_api_logs"
+        groups="rhodes_mauritius_einvoicing.group_allow_show_mra_einvoicing_logs"/> -->
+
+</odoo>

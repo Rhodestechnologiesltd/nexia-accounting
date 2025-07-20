@@ -1,0 +1,11 @@
+00 25 - Fna Fix - Luqman
+Issue:
+B2C Transaction required BRN and TAN (Wrong behaviour)
+
+Fix:
+set both brn and tan to NONE
+alter condition for B2B and B2G: Only B2B Requires Both BRN and TAN (mandatory)
+
+changes:
+Added a new field on partner (buyer_type)
+

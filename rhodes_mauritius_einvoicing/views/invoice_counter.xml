@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_invoice_counter_report_tree" model="ir.ui.view">
+        <field name="name">invoice.counter.report.tree</field>
+        <field name="model">res.company</field>
+        <field name="arch" type="xml">
+            <tree string="MRA Invoice Counter" create="0" edit="0" delete="0">
+                <field name='name' string="Company"/>
+                <field name="global_count" string="Global"/>
+                <field name="std_count" string="Standard" optional="show"/>
+                <field name="prf_count" string="Proforma" optional="show"/>
+                <field name="crn_count" string="Credit Note" optional="show"/>
+                <field name="drn_count" string="Debit Note" optional="show"/>
+                <field name="trn_count" string="Training" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_invoice_counter_report" model="ir.actions.act_window">
+        <field name="name">Invoice Counter</field>
+        <field name="res_model">res.company</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_invoice_counter_report_tree"/>
+        <field name="domain"></field>
+        <field name="context"></field>
+    </record>
+    
+    <menuitem
+        id="menu_invoice_counter_report"
+        name="Invoice Counter"
+        sequence="34"
+        parent="account.menu_finance"
+        action="rhodes_mauritius_einvoicing.action_invoice_counter_report"
+        groups="rhodes_mauritius_einvoicing.group_allow_show_mra_einvoicing_logs"/>
+
+</odoo>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_move_form_inherit" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.einvoicing</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//label[@for='partner_id']" position="before">
+                <field name='transaction_type' widget="selection_badge" readonly="state != 'draft'"/>
+            </xpath>
+            <xpath expr="//label[@for='invoice_date']" position="before">
+                <field name='invoice_type_desc' readonly="state != 'draft'"/>
+            </xpath>
+            <xpath expr="//field[@name='payment_reference']" position="before">
+                <field name='mode_of_payment' readonly="state != 'draft'"/>
+            </xpath>
+            <!-- <xpath expr="//field[@name='partner_id']" position="before">
+                <field name='brn'/>
+                <field name='vat'/>
+            </xpath> -->
+            <xpath expr="//notebook//page[@name='other_info']" position="after">
+                <page string="MRA eInvoicing" invisible="not enable_mra_api or state != 'posted'" groups="rhodes_mauritius_einvoicing.group_allow_mra_einvoicing">
+                    <group invisible="1">
+                        <field name='enable_mra_api'/>
+                        <field name='is_mra_fiscalised'/>
+                        <field name='eInvoice_status'/>
+                    </group>
+                    <group>
+                        <group string="Invoice Transmission Data">
+                            <field name='transaction_type' readonly="state != 'draft'"/>
+                            <field name='invoice_type_desc' readonly="state != 'draft'"/>
+                            <field name='mode_of_payment' readonly="state != 'draft'"/>
+                            <field name='refund_reason' invisible="invoice_type_desc not in ['CRN', 'DRN']" readonly="state != 'draft'"/>
+                        </group>
+                        <group string="MRA eInvoicing Response">
+                            <field name='irn' readonly="True"/>
+                            <field name='qr_code' readonly="True" widget="image" options="{'reload': false }"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button name="action_mra_fiscalise" groups="rhodes_mauritius_einvoicing.group_allow_mra_einvoicing" string="Send for eInvoicing" invisible="state != 'posted' or move_type not in ['out_invoice', 'out_refund', 'in_refund', 'in_invoice'] or eInvoice_status == 'success' or not enable_mra_api" class="btn-primary" type="object"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_account_move_search_inherit" model="ir.ui.view">
+        <field name="name">account.move.search.inherit.einvoicing</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='cancel']" position="after">
+                <separator/>
+                <filter name="mra_is_fiscalised" string="Fiscalised" domain="[('is_mra_fiscalised', '=', True)]"/>
+                <filter name="mra_is_fiscalised" string="Not Fiscalised" domain="[('is_mra_fiscalised', '=', False)]"/>
+            </xpath>
+            <xpath expr="//filter[@name='duedate']" position="after">
+                <separator/>
+                <filter string="Fiscalisation Status" name="mra_status" context="{'group_by': 'eInvoice_status'}"/>
+                <separator/>
+                <!-- <filter string="Transaction Type" name="group_transaction_type" context="{'group_by': 'transaction_type'}"/> -->
+                <filter string="Invoice Type" name="group_invoice_type" context="{'group_by': 'invoice_type_desc'}"/>
+                <filter string="Mode of Payment" name="group_payment_mode" context="{'group_by': 'mode_of_payment'}"/>
+            </xpath>
+        </field>
+    </record>
+
+     <!-- Action send mra einvoicing for multi invoicies -->
+    <record id="action_account_send_einvoicing_from_list" model="ir.actions.server">
+        <field name="name">Send for MRA Fiscalisation</field>
+        <field name="groups_id" eval="[(4, ref('rhodes_mauritius_einvoicing.group_allow_mra_einvoicing'))]"/>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+                action = records.action_send_for_invocies()
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--    Res config settings view for adding new boolean fields-->
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">
+            res.config.settings.view.form.inherit.advanced.vat.invoice
+        </field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr='//div[@id="companies"]' position='after'>
+                 <block title="Login" id="user_login">
+                    <setting string="Login Information">
+                        <field name="is_user_login"/>
+                        <div class="content-group" invisible='not is_user_login'>
+                            <div class="row mt16">
+                                <label for="user_login" string="User Name" class="col-lg-3"/>
+                                <field name="user_login" required='is_user_login'/>
+                            </div>
+                            <div class="row mt16">
+                                <label for="user_password" string="Password" class="col-lg-3"/>
+                                <field name="user_password" required='is_user_login'/>
+                            </div>
+                            <div class="row mt16 text-right">
+                                <label for="user_ebsMraId" string="ebsMraId" class="col-lg-3"/>
+                                <field name="user_ebsMraId" required='is_user_login'/>
+                            </div>
+                            <div>
+                                <button name='action_login' string='Sign In' type='object'/> 
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

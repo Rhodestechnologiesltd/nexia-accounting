@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form" model="ir.ui.view">
+        <field name="name">res.company.form.inherit.einvoicing</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook//page[@name='branches']" position="after">
+                <page string="Counters" name="counter">
+                    <group string="Counters">
+                        <field name="global_count" string="Global"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="std_count" string="Standard"/>
+                            <field name="prf_count" string="Proforma"/>
+                        </group>
+                        <group>
+                            <field name="crn_count" string="Credit Note"/>
+                            <field name="drn_count" string="Debit Note"/>
+                            <field name="trn_count" string="Training"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Configuration for MRA API">
+                    <group>
+                        <field name='enable_mra_api'/>
+                    </group>
+                    <group>
+                        <group string="Credentials" invisible="not enable_mra_api">
+                            <field name='username' required="enable_mra_api"/>
+                            <field name='password' required="enable_mra_api" password="True"/>
+                            <field name='ebs_mra_id' required="enable_mra_api"/>
+                            <field name='area_code' required="enable_mra_api"/>
+                        </group>
+                        <group string="Token details" invisible="not enable_mra_api">
+                            <field name='token_status' readonly="1"/>
+                            <field name='token' readonly="1"/>
+                            <field name='encrypted_key' readonly="1"/>
+                            <field name='encoded_key' readonly="1"/>
+                            <field name='token_creation_date' readonly="1"/>
+                            <field name='token_expiry_date' readonly="1"/>
+                        </group>
+                    </group>
+                    <button name="action_generate_token" string="Test Connection" class="oe_highlight" type="object" invisible="not enable_mra_api"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

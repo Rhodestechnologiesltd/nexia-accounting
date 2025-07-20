@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+rhodes_mauritius_einvoicing.access_mra_logs,access_mra_logs,rhodes_mauritius_einvoicing.model_mra_logs,base.group_user,1,1,1,1
+rhodes_mauritius_einvoicing.access_multi_mra_einvoicing,access_multi_mra_einvoicing,rhodes_mauritius_einvoicing.model_multi_mra_einvoicing,base.group_user,1,1,1,1

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="mra_authentication_url" model="ir.config_parameter" forcecreate="0">
+        <field name="key">rhodes_mauritius_einvoicing.mra_authentication_url</field>
+        <field name="value">https://vfisc.mra.mu/einvoice-token-service/token-api/generate-token</field>
+    </record>
+
+    <record id="mra_invoice_transmission_url" model="ir.config_parameter" forcecreate="0">
+        <field name="key">rhodes_mauritius_einvoicing.mra_invoice_transmission_url</field>
+        <field name="value">https://vfisc.mra.mu/realtime/invoice/transmit</field>
+    </record>
+
+</odoo>

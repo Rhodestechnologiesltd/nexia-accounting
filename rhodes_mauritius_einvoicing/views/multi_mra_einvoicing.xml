@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="multi_mra_eInvoicing_view_form" model="ir.ui.view">
+            <field name="name">Multi MRA eInvoicing.form</field>
+            <field name="model">multi.mra.einvoicing</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="account_move_ids" widget="many2many_tags" readonly="1"/>
+                    </group>
+                    <footer>
+                        <button name="action_mra_fiscalise" string="Send eInvoicing" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
