@@ -77,7 +77,7 @@ class MRAEinvocing(object):
         # Step 4: Encrypt the string using RSA with ECB mode and PKCS padding
         # Load RSA public key from file or any other source
         from odoo.modules.module import get_module_resource
-        public_key_path = get_module_resource('rhodes_mauritius_einvoicing', 'static/src/MRA/public_key.pem')
+        public_key_path = get_module_resource('rhodes_mauritius_einvoicing', 'static/src/MRA/public_key_1.pem')
         with open(public_key_path, "rb") as file:
             public_key = RSA.import_key(file.read())
 
