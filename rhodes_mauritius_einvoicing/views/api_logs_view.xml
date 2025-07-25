@@ -7,7 +7,6 @@
         <field name="arch" type="xml">
             <tree string="MRA Logs" create="0" edit="0" delete="0" default_order="create_date desc">
                 <field name='create_date'/>
-                <field name='api_type'/>
                 <field name='request_id'/>
                 <field name='request_json' optional="hide"/>
                 <field name='response_id'/>
