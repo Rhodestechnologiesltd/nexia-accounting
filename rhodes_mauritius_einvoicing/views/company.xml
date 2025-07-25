@@ -13,7 +13,7 @@
                     <group>
                         <group>
                             <field name="std_count" string="Standard"/>
-                            <field name="prf_count" string="Proforma"/>
+                            <field name="prf_count" string="Proformas"/>
                         </group>
                         <group>
                             <field name="crn_count" string="Credit Note"/>
