@@ -289,9 +289,10 @@ class MRAEinvocing(object):
             item_list_data = []
             line_count = 0
             for invoice_line in invoice.invoice_line_ids:
-                line_count += 1
-                line_dict = self._get_list_data(invoice_line, line_count)
-                item_list_data.append(line_dict)
+                if invoice_line.display_type not in ('line_section', 'line_note'):
+                    line_count += 1
+                    line_dict = self._get_list_data(invoice_line, line_count)
+                    item_list_data.append(line_dict)
 
             count = invoice.company_id.global_count + 1
             
@@ -368,30 +369,29 @@ class MRAEinvocing(object):
         }
 
     def _get_list_data(self, invoice_line, line_count):
-        if invoice_line.display_type not in ('line_section', 'line_note'):
-            totalAmtWoVatMur = False
-            if invoice_line.move_id.currency_id.name != 'MUR':
-                mur_currency_id = invoice_line.env.ref('base.MUR')
-                totalAmtWoVatMur = invoice_line.move_id.currency_id._convert(invoice_line.price_subtotal, mur_currency_id, invoice_line.move_id.company_id, invoice_line.move_id.invoice_date or invoice_line.move_id.date)
-            else:
-                totalAmtWoVatMur = invoice_line.price_subtotal
-    
-            if not invoice_line.product_id.tax_code:
-                raise ValidationError("For product %s Tax code is Mandatory."  %(invoice_line.product_id.name))
-    
-            return {
-                "itemNo": line_count,
-                "taxCode": invoice_line.product_id.tax_code,
-                "nature": "GOODS" if invoice_line.product_id.detailed_type != 'service' else "SERVICES",
-                "productCodeMra": "",
-                "productCodeOwn": invoice_line.product_id.default_code,
-                "itemDesc": invoice_line.product_id.display_name,
-                "quantity": invoice_line.quantity,
-                "unitPrice": round(invoice_line.price_unit),
-                "discount": round(invoice_line.discount),
-                "discountedValue": round(invoice_line.price_total),
-                "amtWoVatCur": round(invoice_line.price_subtotal),
-                "amtWoVatMur": round(totalAmtWoVatMur, 2),
-                "vatAmt": round(invoice_line.price_total - invoice_line.price_subtotal, 2),
-                "totalPrice": round(invoice_line.price_total),
-            }
+        totalAmtWoVatMur = False
+        if invoice_line.move_id.currency_id.name != 'MUR':
+            mur_currency_id = invoice_line.env.ref('base.MUR')
+            totalAmtWoVatMur = invoice_line.move_id.currency_id._convert(invoice_line.price_subtotal, mur_currency_id, invoice_line.move_id.company_id, invoice_line.move_id.invoice_date or invoice_line.move_id.date)
+        else:
+            totalAmtWoVatMur = invoice_line.price_subtotal
+
+        if not invoice_line.product_id.tax_code:
+            raise ValidationError("For product %s Tax code is Mandatory."  %(invoice_line.product_id.name))
+
+        return {
+            "itemNo": line_count,
+            "taxCode": invoice_line.product_id.tax_code,
+            "nature": "GOODS" if invoice_line.product_id.detailed_type != 'service' else "SERVICES",
+            "productCodeMra": "",
+            "productCodeOwn": invoice_line.product_id.default_code,
+            "itemDesc": invoice_line.product_id.display_name,
+            "quantity": invoice_line.quantity,
+            "unitPrice": round(invoice_line.price_unit),
+            "discount": round(invoice_line.discount),
+            "discountedValue": round(invoice_line.price_total),
+            "amtWoVatCur": round(invoice_line.price_subtotal),
+            "amtWoVatMur": round(totalAmtWoVatMur, 2),
+            "vatAmt": round(invoice_line.price_total - invoice_line.price_subtotal, 2),
+            "totalPrice": round(invoice_line.price_total),
+        }
