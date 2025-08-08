@@ -368,6 +368,8 @@ class MRAEinvocing(object):
         }
 
     def _get_list_data(self, invoice_line, line_count):
+        if invoice_line.display_type in ('line_section', 'line_note'):
+            return None
         totalAmtWoVatMur = False
         if invoice_line.move_id.currency_id.name != 'MUR':
             mur_currency_id = invoice_line.env.ref('base.MUR')
