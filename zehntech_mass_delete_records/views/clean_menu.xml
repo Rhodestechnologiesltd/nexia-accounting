@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="mass_clean_wizard_action" model="ir.actions.act_window">
+            <field name="name">Mass Clean Data</field>
+            <field name="res_model">mass.clean.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field> <!-- Opens as a modal -->
+    </record>
+    <record id="action_purchase_clean_wizard" model="ir.actions.act_window">
+        <field name="name">Clean Purchase Orders</field>
+        <field name="res_model">purchase.clean.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <record id="action_audit_log" model="ir.actions.act_window">
+        <field name="name">Deletion Logs</field>
+        <field name="res_model">audit.log</field>
+        <field name="view_mode">tree</field>
+    </record>
+    <menuitem id="mass_delete_data_menu" name="Mass Delete Records" parent="base.menu_administration" action="mass_clean_wizard_action" sequence="110" groups="base.group_no_one"/> <!-- Visible only to system admins -->
+    <menuitem id="menu_audit_log" name="Deletion Logs" parent="base.menu_administration" action="action_audit_log"/>
+</odoo>

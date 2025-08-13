@@ -1,0 +1,1606 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* zehntech_mass_delete_records
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-11 17:29+0000\n"
+"PO-Revision-Date: 2025-02-11 17:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__action_date
+msgid "Action Date"
+msgstr "アクション日"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__action_type
+msgid "Action Type"
+msgstr "Type d'action"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "Action on invoicing and journal performed."
+msgstr "Action sur la facturation et le journal effectuée."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_bank_statement_line__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_journal__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_move__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_payment__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_payment_term__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mrp_bom__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mrp_production__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_project_project__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_sale_order__active
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_stock_picking__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__additional_info
+msgid "Additional Information"
+msgstr "Informations Complémentaires"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_audit_log__details
+msgid ""
+"Additional details about the action performed, such as field values or "
+"conditions."
+msgstr ""
+"Détails supplémentaires sur l'action effectuée, tels que les valeurs de "
+"champ ou les conditions."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_invoicing
+msgid "All Invoicing, Payments & Journal Entries"
+msgstr "Toutes les facturations, paiements et écritures de journal"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "All Modules Cleanup"
+msgstr "Nettoyage de tous les modules"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "All Purchase Orders have been successfully deleted."
+msgstr "Tous les bons de commande ont été supprimés avec succès."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_deletion_audit_log__additional_info
+msgid "Any additional details or comments related to the deleted record."
+msgstr ""
+"Tout détail ou commentaire supplémentaire lié à l’enregistrement supprimé."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__audit_log__action_type__archive
+msgid "Archive"
+msgstr "Archiver"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__mass_clean_manufacturing_wizard__action__archive_done
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__mass_clean_wizard__clean_manufacturing_option__archive_done
+msgid "Archive Done Orders"
+msgstr "Archiver les commandes terminées"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/data_deletion_confirmation_wizard.py:0
+#, python-format
+msgid ""
+"Are you sure you want to delete all data across all modules? This action "
+"cannot be undone."
+msgstr ""
+"Êtes-vous sûr de vouloir supprimer toutes les données de tous les modules ? "
+"Cette action ne peut pas être annulée."
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_confirm_deletion_wizard_form
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_confirm_wizard
+msgid "Are you sure you want to delete the selected data?"
+msgstr "Êtes-vous sûr de vouloir supprimer les données sélectionnées ?"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_account_deletion_audit_log
+msgid "Audit Log for Deleted Records"
+msgstr "Journal d'audit pour les enregistrements supprimés"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_audit_log
+msgid "Audit Log for User Actions"
+msgstr "Journal d'audit des actions des utilisateurs"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "BOM %(bom_name)s archived by %(user_name)s"
+msgstr "BOM %(bom_name)s archivé par %(user_name)s"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_bom
+msgid "BOM & Manufacturing Orders"
+msgstr "Nomenclature et ordres de fabrication"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "BOM and Manufacturing Orders Cleanup"
+msgstr "Nettoyage des nomenclatures et des ordres de fabrication"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Nomenclature"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_confirm_deletion_wizard_form
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_data_deletion_confirmation_wizard_form
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_confirm_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_confirmation_wizard_form
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_manufacturing_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__purchase_clean_wizard__status__cancel
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/account_move.py:0
+#, python-format
+msgid "Cannot delete record: %s"
+msgstr "Impossible de supprimer l'enregistrement : %s"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_chart_of_accounts
+msgid "Chart of Accounts & All Accounting Data"
+msgstr "Plan comptable et toutes les données comptables"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__action
+msgid ""
+"Choose an action to perform on manufacturing orders:\n"
+"- Delete Ongoing Orders: Permanently delete orders that are in progress.\n"
+"- Archive Done Orders: Move completed orders to an archived state."
+msgstr ""
+"Choisissez une action à effectuer sur les ordres de fabrication Supprimer "
+"les commandes en cours Supprimez définitivement les commandes en cours. "
+"Archiver les commandes terminées : Déplacez les commandes terminées vers un "
+"état archivé."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_manufacturing_option
+msgid "Choose what to do with manufacturing orders."
+msgstr ""
+"Choisissez ce que vous souhaitez faire avec les commandes de fabrication."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_all
+msgid "Clean All Data"
+msgstr "Nettoyer toutes les données"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Clean Data"
+msgstr "Données propres"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: model:ir.actions.act_window,name:zehntech_mass_delete_records.action_purchase_clean_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+#, python-format
+msgid "Clean Purchase Orders"
+msgstr "Bons de commande propres"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_manufacturing_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: model:ir.actions.act_window,name:zehntech_mass_delete_records.action_confirm_deletion_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_confirm_deletion_wizard_form
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_data_deletion_confirmation_wizard_form
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_confirm_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_confirmation_wizard_form
+#, python-format
+msgid "Confirm Deletion"
+msgstr "Confirmer la suppression"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/data_deletion_confirmation_wizard.py:0
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__confirmation_message
+#, python-format
+msgid "Confirmation Message"
+msgstr "Message de confirmation"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_confirm_deletion_wizard
+msgid "Confirmation Wizard for Deleting Multiple Modules"
+msgstr "Assistant de confirmation pour la suppression de plusieurs modules"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_mass_clean_confirmation_wizard
+msgid "Confirmation Wizard for Mass Clean Operations"
+msgstr "Assistant de confirmation pour les opérations de nettoyage de masse"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_mass_clean_confirm_wizard
+msgid "Confirmation for Mass Clean"
+msgstr "Confirmation pour le nettoyage de masse"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirm_wizard__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_model__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__create_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirm_wizard__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_model__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__create_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_customers_vendors
+msgid "Customers & Vendors"
+msgstr "Clients et fournisseurs"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_data_deletion_confirmation_wizard
+msgid "Data Deletion Confirmation Wizard"
+msgstr "Assistant de confirmation de suppression de données"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/confirm_deletion_wizard.py:0
+#, python-format
+msgid "Data of selected modules deleted successfully"
+msgstr "Les données des modules sélectionnés ont été supprimées avec succès"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__audit_log__action_type__delete
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_confirmation_wizard_form
+msgid "Delete"
+msgstr "Supprimer"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_all
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "Delete All Purchase Orders"
+msgstr "Supprimer toutes les commandes d'achat"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete BOM and manufacturing orders"
+msgstr "Supprimer la nomenclature et les ordres de fabrication"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__mass_clean_manufacturing_wizard__action__delete_ongoing
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__mass_clean_wizard__clean_manufacturing_option__delete_ongoing
+msgid "Delete Ongoing Orders"
+msgstr "Supprimer les commandes en cours"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_bom
+msgid "Delete all Bill of Materials and associated manufacturing orders."
+msgstr ""
+"Supprimez toutes les nomenclatures et les ordres de fabrication associés."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_customers_vendors
+msgid "Delete all customer and vendor records."
+msgstr "Supprimez tous les enregistrements clients et fournisseurs."
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete all data"
+msgstr "Supprimer toutes les données"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_invoicing
+msgid "Delete all invoicing data, including payments and journal entries."
+msgstr ""
+"Supprimez toutes les données de facturation, y compris les paiements et les "
+"écritures de journal."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_projects
+msgid "Delete all projects, tasks, and timesheet entries."
+msgstr "Supprimez tous les projets, tâches et entrées de feuille de temps."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_purchases
+msgid "Delete all purchase orders and their associated transfers."
+msgstr "Supprimez tous les bons de commande et leurs transferts associés."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_sales
+msgid "Delete all sales orders and their associated transfers."
+msgstr "Supprimez toutes les commandes client et leurs transferts associés."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_by_confirmation_date
+msgid "Delete by Confirmation Dates"
+msgstr "Supprimer par date de confirmation"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_by_expected_arrival
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "Delete by Expected Arrival Date"
+msgstr "Supprimer par date d'arrivée prévue"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_by_status
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "Delete by Status"
+msgstr "Supprimer par statut"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete invoicing data,payment and journal entries"
+msgstr ""
+"Supprimer les données de facturation, les paiements et les écritures de "
+"journal"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete only journal entries"
+msgstr "Supprimer uniquement les entrées de journal"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_journal_entries
+msgid ""
+"Delete only journal entries, leaving invoicing and payment data intact."
+msgstr ""
+"Supprimez uniquement les écritures de journal, en laissant les données de "
+"facturation et de paiement intactes."
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete only manufacturing orders"
+msgstr "Supprimer uniquement les ordres de fabrication"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_manufacturing
+msgid "Delete only manufacturing orders, leaving BOMs intact."
+msgstr ""
+"Supprimez uniquement les ordres de fabrication, en laissant les "
+"nomenclatures intactes."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_tasks
+msgid "Delete only task and timesheet entries, leaving projects intact."
+msgstr ""
+"Supprimez uniquement les entrées de tâches et de feuilles de temps, en "
+"laissant les projets intacts."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_transfers
+msgid "Delete only transfer records without affecting other data."
+msgstr ""
+"Supprimez uniquement les enregistrements de transfert sans affecter les "
+"autres données."
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete only transfers"
+msgstr "Supprimer uniquement les transferts"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete purchases and transfers"
+msgstr "Supprimer les achats et les transferts"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Delete sales and transfers"
+msgstr "Supprimer les ventes et les transferts"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_chart_of_accounts
+msgid "Delete the chart of accounts and all associated accounting data."
+msgstr ""
+"Supprimer le plan comptable et toutes les données comptables associées."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__deletion_date
+msgid "Deletion Date"
+msgstr "Date de suppression"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.actions.act_window,name:zehntech_mass_delete_records.action_audit_log
+#: model:ir.ui.menu,name:zehntech_mass_delete_records.menu_audit_log
+msgid "Deletion Logs"
+msgstr "Journaux de suppression"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirmation_wizard.py:0
+#, python-format
+msgid "Deletion Successful"
+msgstr "Suppression réussie"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirmation_wizard.py:0
+#, python-format
+msgid "Deletion complete! %s"
+msgstr "Suppression terminée ! %s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/data_deletion_confirmation_wizard.py:0
+#, python-format
+msgid "Deletion successful for all modules!"
+msgstr "Suppression réussie pour tous les modules !"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid "Deletion successful!"
+msgstr "Suppression réussie !"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__description
+msgid "Description"
+msgstr ""
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__details
+msgid "Details"
+msgstr "Détails"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirm_wizard__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_model__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__display_name
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__confirmation_message
+msgid ""
+"Displays a confirmation message to warn users about the consequences of the "
+"deletion action."
+msgstr ""
+"Affiche un message de confirmation pour avertir les utilisateurs des "
+"conséquences de l'action de suppression"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_confirm_deletion_wizard__selected_modules
+msgid ""
+"Displays a list of modules selected for deletion, as a summary for user "
+"confirmation."
+msgstr ""
+"Affiche une liste des modules sélectionnés pour la suppression, sous forme "
+"de résumé pour confirmation de l'utilisateur."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__summary_text
+msgid ""
+"Displays a summary of records that will be deleted based on selected "
+"options."
+msgstr ""
+"Affiche un résumé des enregistrements qui seront supprimés en fonction des "
+"options sélectionnées"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__end_confirmation_date
+msgid "End Confirmation Date"
+msgstr "Date de confirmation de fin"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__end_expected_arrival
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "End Expected Arrival Date"
+msgstr "Fin Date d'arrivée prévue"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid ""
+"End Expected Arrival Date must be greater than or equal to Start Expected "
+"Arrival Date."
+msgstr ""
+"La date d’arrivée prévue de fin doit être supérieure ou égale à la date "
+"d’arrivée prévue de début."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__end_confirmation_date
+msgid ""
+"Enter the end date for the confirmation date range to delete purchase "
+"orders."
+msgstr ""
+"Saisissez la date de fin de la plage de dates de confirmation pour supprimer"
+" les bons de commande."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__end_expected_arrival
+msgid ""
+"Enter the end date for the expected arrival date range to delete purchase "
+"orders."
+msgstr ""
+"Saisissez la date de fin pour la plage de dates d’arrivée prévue pour "
+"supprimer les bons de commande."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__start_confirmation_date
+msgid ""
+"Enter the start date for the confirmation date range to delete purchase "
+"orders."
+msgstr ""
+"Saisissez la date de début de la plage de dates de confirmation pour "
+"supprimer les bons de commande."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__start_expected_arrival
+msgid ""
+"Enter the start date for the expected arrival date range to delete purchase "
+"orders."
+msgstr ""
+"Saisissez la date de début de la plage de dates d'arrivée prévue pour "
+"supprimer les bons de commande."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid ""
+"Failed to delete some selected projects. Check permissions or dependencies."
+msgstr ""
+"Impossible de supprimer certains projets sélectionnés. Vérifiez les "
+"autorisations ou les dépendances."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid ""
+"Failed to delete some selected tasks. Check permissions or dependencies."
+msgstr ""
+"Impossible de supprimer certaines tâches sélectionnées. Vérifiez les "
+"autorisations ou les dépendances."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirm_wizard__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_model__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__id
+msgid "ID"
+msgstr "IDENTIFIANT"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mrp_production__active
+msgid "Indicates whether this Manufacturing orders is active."
+msgstr "Indique si cet ordre de fabrication est actif."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_bank_statement_line__active
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_move__active
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_payment__active
+msgid "Indicates whether this account is active."
+msgstr "Indique si ce compte est actif."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mrp_bom__active
+msgid "Indicates whether this bom is active."
+msgstr "Indique si cette nomenclature est active."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_journal__active
+msgid ""
+"Indicates whether this journal is active. Set to False to archive the "
+"journal and hide it from operational views."
+msgstr ""
+"Indique si ce journal est actif. Définissez cette valeur sur False pour "
+"archiver le journal et le masquer des vues opérationnelles."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_payment_term__active
+msgid "Indicates whether this payment term is active."
+msgstr "Indique si ce délai de paiement est actif."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_project_project__active
+msgid "Indicates whether this project is active."
+msgstr ""
+"Si le champ actif n'est pas coché, le projet sera masqué, mais ne sera pas "
+"supprimé."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_sale_order__active
+msgid "Indicates whether this sale order is active."
+msgstr "Indique si cet ordre de vente est actif."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_stock_picking__active
+msgid "Indicates whether this transfers is active."
+msgstr "Indique si ce transfert est actif."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__account_deletion_audit_log__record_type__invoice
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.actions.act_window,name:zehntech_mass_delete_records.action_account_deletion_audit_log
+#: model:ir.ui.menu,name:zehntech_mass_delete_records.menu_account_deletion_audit_log
+msgid "Invoice Deletion Logs"
+msgstr "Journaux de suppression de factures"
+
+#. module: zehntech_mass_delete_records
+#: model:res.groups,name:zehntech_mass_delete_records.group_invoice_manager
+msgid "Invoice Manager"
+msgstr "Gestionnaire de factures"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "Invoicing, payments & journal entries deleted!"
+msgstr "Facturation, paiements et écritures de journal supprimés !"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Invoicing,Journals and Payment Cleanup"
+msgstr "Nettoyage de la facturation, des journaux et des paiements"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_account_journal
+msgid "Journal"
+msgstr "Journal"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Journal Entries Cleanup"
+msgstr "Nettoyage des entrées de journal"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_account_move
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__account_deletion_audit_log__record_type__journal_entry
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirm_wizard__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_model__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__write_uid
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirm_wizard__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_model__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__write_date
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__wizard_id
+msgid ""
+"Links this confirmation wizard to its associated mass clean wizard for data "
+"deletion."
+msgstr ""
+"Lie cet assistant de confirmation à son assistant de nettoyage de masse "
+"associé pour la suppression des données."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_confirm_deletion_wizard__wizard_id
+msgid ""
+"Links this confirmation wizard to its corresponding parent mass clean "
+"wizard."
+msgstr ""
+"Lie cet assistant de confirmation à son assistant de nettoyage de masse "
+"parent correspondant."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__purchase_clean_wizard__status__done
+msgid "Locked"
+msgstr "Fermé"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__project_ids
+msgid "Manually select specific projects to clean."
+msgstr "Sélectionnez manuellement des projets spécifiques à nettoyer."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__task_ids
+msgid "Manually select specific tasks to clean."
+msgstr "Sélectionnez manuellement les tâches spécifiques à nettoyer."
+
+#. module: zehntech_mass_delete_records
+#: model:res.groups,name:zehntech_mass_delete_records.group_manufacturing_manager
+msgid "Manufacturing Manager"
+msgstr "Responsable de fabrication"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Manufacturing Orders Cleanup"
+msgstr "Nettoyage des commandes de fabrication"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#, python-format
+msgid "Manufacturing Orders got archived!"
+msgstr "Les commandes de fabrication ont été archivées !"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#, python-format
+msgid "Manufacturing Orders got deleted!"
+msgstr "Les ordres de fabrication ont été supprimés !"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.actions.act_window,name:zehntech_mass_delete_records.mass_clean_wizard_action
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Mass Clean Data"
+msgstr "Nettoyage de masse des données"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_mass_clean_model
+msgid "Mass Clean Data for Odoo Modules"
+msgstr "Nettoyage de masse des données pour les modules Odoo"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.actions.act_window,name:zehntech_mass_delete_records.action_mass_clean_manufacturing_wizard
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_manufacturing_wizard
+msgid "Mass Clean Manufacturing Orders"
+msgstr "Commandes de fabrication de nettoyage de masse"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_mass_clean_manufacturing_wizard
+msgid "Mass Clean Manufacturing Orders Wizard"
+msgstr "Assistant de commandes de fabrication pour nettoyage de masse"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_mass_clean_wizard
+msgid "Mass Clean Wizard"
+msgstr "Assistant de nettoyage de masse"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.ui.menu,name:zehntech_mass_delete_records.mass_delete_data_menu
+msgid "Mass Delete Records"
+msgstr "Suppression massive de données"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__model_name
+msgid "Model"
+msgstr "Modèle"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "No Invoices found to delete."
+msgstr "Aucune facture trouvée à supprimer."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "No Journal Entries found to delete."
+msgstr "Aucune entrée de journal trouvée à supprimer."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "No Purchase Orders were deleted."
+msgstr "Aucun bon de commande n’a été supprimé."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "No Sales Orders found to delete."
+msgstr "Aucune commande client à supprimer n'a été trouvée."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "No Transfers found to delete."
+msgstr "Aucun transfert de fonds à supprimer."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/confirm_deletion_wizard.py:0
+#, python-format
+msgid "No data found for the selected modules: %s"
+msgstr "Aucune donnée trouvée pour les modules sélectionnés : %s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/data_deletion_confirmation_wizard.py:0
+#, python-format
+msgid "No data found to delete across the modules. Deletion cannot proceed."
+msgstr ""
+"Aucune donnée n’a été trouvée à supprimer dans les modules. La suppression "
+"ne peut pas se poursuivre."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#, python-format
+msgid "No done manufacturing orders to archive."
+msgstr "Aucune commande de fabrication terminée à archiver."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "No invoices, payments, or journal entries to delete."
+msgstr "Aucune facture, paiement ou écriture de journal à supprimer."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "No journal entries to delete."
+msgstr "Aucune entrée de journal à supprimer."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#, python-format
+msgid "No ongoing manufacturing orders to delete."
+msgstr "Aucune commande de fabrication en cours à supprimer."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "No purchase orders found in the given Expected Arrival Date range."
+msgstr ""
+"Aucune bonne de commande n’a été trouvée dans la plage de dates d’arrivée "
+"prévue."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "No purchase orders found to delete."
+msgstr "Aucun bon de commande n’a été trouvé à supprimer."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "No purchase orders found with status to delete."
+msgstr "Aucun bon de commande n’a été trouvé avec le statut à supprimer."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_journal_entries
+msgid "Only Journal Entries"
+msgstr "Entrées de journal uniquement"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_manufacturing
+msgid "Only Manufacturing Orders"
+msgstr "Commandes de fabrication uniquement"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_tasks
+msgid "Only Tasks & Timesheets"
+msgstr "Tâches et feuilles de temps uniquement"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_only_transfers
+msgid "Only Transfers"
+msgstr "Transferts uniquement"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "Only journal entries deleted!"
+msgstr "Seules les écritures de journal ont été supprimées !"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_audit_log__description
+msgid ""
+"Optional field to provide a descriptive summary or explanation of the logged"
+" action."
+msgstr ""
+"Champ facultatif pour fournir un résumé descriptif ou une explication de "
+"l'action enregistrée."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__wizard_id
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_data_deletion_confirmation_wizard__wizard_id
+msgid "Parent Wizard"
+msgstr "Assistant Parental"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__account_deletion_audit_log__record_type__payment
+msgid "Payment"
+msgstr "Paiement"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_account_payment_term
+msgid "Payment Terms"
+msgstr "Conditions de paiement"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid ""
+"Please select an option: delete all purchase orders or delete by status or "
+"by expected arrival date."
+msgstr ""
+"Veuillez sélectionner une option : supprimer tous les bons de commande ou "
+"supprimer par statut ou par date d’arrivée prévue."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid "Please select at least one option to proceed with the data cleaning."
+msgstr ""
+"Veuillez sélectionner au moins une option pour procéder au nettoyage des "
+"données."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_mrp_production
+msgid "Production Order"
+msgstr "Ordre de production"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_project_project
+msgid "Project"
+msgstr "Projet"
+
+#. module: zehntech_mass_delete_records
+#: model:res.groups,name:zehntech_mass_delete_records.group_project_manager
+msgid "Project Manager"
+msgstr "Chef de projet"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_projects
+msgid "Project, Tasks & Timesheets"
+msgstr "Projet, tâches et feuilles de temps"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Projects Cleanup"
+msgstr "Projets de nettoyage"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid "Projects to delete/archive: %(count)s - %(names)s"
+msgstr "Projets à supprimer/archiver : %(count)s - %(names)s"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__summary_text
+msgid ""
+"Provides an overview of the records that will be deleted during the mass "
+"clean operation. This field is read-only and auto-populated for review."
+msgstr ""
+"Fournit un aperçu des enregistrements qui seront supprimés lors de "
+"l'opération de nettoyage de masse. Ce champ est en lecture seule et "
+"renseigné automatiquement pour révision."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_purchases
+msgid "Purchase & All Transfers"
+msgstr "Achat et tous les transferts"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_purchase_clean_wizard
+msgid "Purchase Clean Wizard"
+msgstr "Acheter Clean Wizard"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__purchase_clean_wizard__status__purchase
+msgid "Purchase Order"
+msgstr "Bon de commande"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "Purchase Order %(order_name)s canceled by %(user_name)s"
+msgstr "Commande d’achat %(order_name)s annulée par %(user_name)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "Purchase Order %(order_name)s deleted by %(user_name)s"
+msgstr "Commande d’achat %(order_name)s supprimée par %(user_name)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "Purchase Orders with status '%s' have been successfully deleted."
+msgstr "Les bons de commande dont le statut est « %s » ont été supprimés."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid ""
+"Purchase Orders within the specified date range have been successfully "
+"deleted."
+msgstr ""
+"Les bons de commande dans la plage de dates spécifiée ont été réussis "
+"Supprimé."
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Purchases Cleanup"
+msgstr "Nettoyage des achats"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__purchase_clean_wizard__status__draft
+msgid "RFQ"
+msgstr "Demande de devis"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields.selection,name:zehntech_mass_delete_records.selection__purchase_clean_wizard__status__sent
+msgid "RFQ Sent"
+msgstr "Demande de devis envoyée"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__record_name
+msgid "Record"
+msgstr "Enregistrer"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__record_id
+msgid "Record ID"
+msgstr "ID d'enregistrement"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__record_type
+msgid "Record Type"
+msgstr "Type d'enregistrement"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_sales
+msgid "Sales & All Transfers"
+msgstr "Ventes et tous transferts"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Sales Cleanup"
+msgstr "Nettoyage des ventes"
+
+#. module: zehntech_mass_delete_records
+#: model:res.groups,name:zehntech_mass_delete_records.group_sales_manager
+msgid "Sales Manager"
+msgstr "Directeur des ventes"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "Sales Order %(order_name)s archived by %(user_name)s"
+msgstr "Commande cliente %(order_name)s archivée par %(user_name)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "Sales Order %(order_name)s deleted by %(user_name)s"
+msgstr "Commande cliente %(order_name)s supprimée par %(user_name)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "Sales and all transfers deleted!"
+msgstr "Ventes et tous les transferts supprimés !"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_manufacturing_wizard__action
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__clean_manufacturing_option
+msgid "Select Action"
+msgstr "Sélectionner une action"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid "Select Manufacturing Order Action"
+msgstr "Sélectionnez Action d’ordre de fabrication"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__project_ids
+msgid "Select Projects to Clean"
+msgstr "Sélectionnez les projets à nettoyer"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__task_ids
+msgid "Select Tasks to Clean"
+msgstr "Sélectionnez les tâches à nettoyer"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Select projects to clean"
+msgstr "Sélectionnez les projets à nettoyer"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Select tasks to clean"
+msgstr "Sélectionnez les tâches à nettoyer"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__status
+msgid "Select the status of the Purchase Orders to delete"
+msgstr "Sélectionnez le statut des bons de commande à supprimer"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_mass_clean_wizard__clean_all
+msgid "Select this option to clean all data across all modules."
+msgstr ""
+"Sélectionnez cette option pour nettoyer toutes les données de tous les "
+"modules."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_all
+msgid ""
+"Select this option to delete all purchase orders regardless of their status "
+"or date."
+msgstr ""
+"Sélectionnez cette option pour supprimer tous les bons de commande quel que "
+"soit leur statut ou une date."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_by_confirmation_date
+msgid ""
+"Select this option to delete purchase orders based on their confirmation "
+"dates."
+msgstr ""
+"Sélectionnez cette option pour supprimer les bons de commande en fonction de"
+" leurs dates de confirmation."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_by_expected_arrival
+msgid ""
+"Select this option to delete purchase orders based on their expected arrival"
+" dates."
+msgstr ""
+"Sélectionnez cette option pour supprimer les bons de commande en fonction de"
+" leurs dates d'arrivée prévues."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_purchase_clean_wizard__delete_by_status
+msgid "Select this option to delete purchase orders based on their status."
+msgstr ""
+"Sélectionnez cette option pour supprimer les bons de commande en fonction de"
+" leur statut."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_confirm_deletion_wizard__selected_modules
+msgid "Selected Modules"
+msgstr "Modules sélectionnés"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid ""
+"Some 'done' pickings could not be archived. Check dependencies or "
+"permissions."
+msgstr ""
+"Certaines sélections « effectuées » n'ont pas pu être archivées. Vérifiez "
+"les dépendances ou les autorisations."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "Some projects could not be deleted. Check dependencies or permissions."
+msgstr ""
+"Certains projets n’ont pas pu être supprimés. Vérifiez les dépendances ou "
+"les autorisations."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "Some tasks could not be deleted. Check dependencies or permissions."
+msgstr ""
+"Certaines tâches n’ont pas pu être supprimées. Vérifiez les dépendances ou "
+"les autorisations."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_audit_log__action_type
+msgid "Specifies the type of action performed, such as delete or archive."
+msgstr ""
+"Spécifie le type d’action effectuée, comme la suppression ou l’archivage."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_deletion_audit_log__record_type
+msgid ""
+"Specifies the type of record that was deleted (Invoice, Payment, or Journal "
+"Entry)."
+msgstr ""
+"Spécifie le type d'enregistrement qui a été supprimé (facture, paiement ou "
+"écriture de journal)"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__start_confirmation_date
+msgid "Start Confirmation Date"
+msgstr "Date de confirmation de début"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__start_expected_arrival
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "Start Expected Arrival Date"
+msgstr "Début Date d'arrivée prévue"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_account_deletion_audit_log__state
+msgid "State at Deletion"
+msgstr "État à la suppression"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_purchase_clean_wizard__status
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "Status"
+msgstr "Statut"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/confirm_deletion_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/data_deletion_confirmation_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "Success"
+msgstr "Succès"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "Successfully archived journal: %(journal_name)s"
+msgstr "Revue archivée avec succès : %(journal_name)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "Successfully archived payment term: %(term_name)s with ID: %(term_id)s"
+msgstr ""
+"Archivage réussi du délai de paiement : %(term_name)s avec ID : %(term_id)s"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_confirmation_wizard__summary_text
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_mass_clean_wizard__summary_text
+msgid "Summary of Records to be Deleted"
+msgstr "Résumé des enregistrements à supprimer"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Tasks Cleanup"
+msgstr "Tâches de nettoyage"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid "Tasks to delete/archive: %(count)s - %(names)s"
+msgstr "Tâches à supprimer/archiver : %(count)s - %(names)s"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_audit_log__action_date
+msgid "The date and time when the action was performed."
+msgstr "La date et l'heure auxquelles l'action a été effectuée."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_deletion_audit_log__state
+msgid "The exact date and time when the record was deleted."
+msgstr "L’état ou le statut de l’enregistrement au moment de la suppression."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_audit_log__model_name
+msgid "The name of the model where the action was performed."
+msgstr "Le nom du modèle où l'action a été effectuée."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_audit_log__record_name
+msgid "The name or identifier of the specific record affected by the action."
+msgstr ""
+"Le nom ou l’identifiant de l’enregistrement spécifique affecté par l’action."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_account_deletion_audit_log__record_id
+msgid "The unique identifier (ID) of the record that was deleted."
+msgstr "L'identifiant unique (ID) de l'enregistrement qui a été supprimé."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,help:zehntech_mass_delete_records.field_audit_log__user_id
+msgid "The user who performed the action being logged."
+msgstr "L'utilisateur qui a effectué l'action enregistrée."
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model,name:zehntech_mass_delete_records.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_wizard
+msgid "Transfers Cleanup"
+msgstr "Nettoyage des transferts"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#, python-format
+msgid "Transfers deleted!"
+msgstr "Transferts supprimés !"
+
+#. module: zehntech_mass_delete_records
+#: model:ir.model.fields,field_description:zehntech_mass_delete_records.field_audit_log__user_id
+msgid "User"
+msgstr "Utilisatrice"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "User %(user_name)s is attempting to clean transfer %(transfer_name)s."
+msgstr ""
+"L’utilisatrice %(user_name)s tente de nettoyer le transfert "
+"%(transfer_name)s."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid ""
+"User %(user_name)s is attempting to delete/archive projects: "
+"%(project_names)s"
+msgstr ""
+"L’utilisatrice %(user_name)s tente de supprimer/archiver des projets : "
+"%(project_names)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid ""
+"User %(user_name)s is attempting to delete/archive tasks: %(task_names)s"
+msgstr ""
+"L’utilisatrice %(user_name)s tente de supprimer/archiver les tâches : "
+"%(task_names)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#, python-format
+msgid "User %(user_name)s is authorized to archive Manufacturing Orders."
+msgstr ""
+"L’utilisatrice %(user_name)s est autorisée à archiver les ordres de "
+"fabrication."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#, python-format
+msgid "User %(user_name)s is authorized to delete Manufacturing Orders."
+msgstr ""
+"L’utilisatrice %(user_name)s est autorisée à supprimer des ordres de "
+"fabrication."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid ""
+"User %(user_name)s is initiating the cleanup of purchase orders. "
+"%(action_details)s"
+msgstr ""
+"L’utilisateur %(user_name)s lance le nettoyage des commandes fournisseur. "
+"%(action_details)s"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "User %(user_name)s successfully deleted transfer %(transfer_name)s."
+msgstr ""
+"L’utilisatrice %(user_name)s a supprimé avec succès le transfert "
+"%(transfer_name)s."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/confirm_deletion_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_confirm_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/mass_clean_manufacturing_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_data_deletion_confirmation_wizard_form
+#, python-format
+msgid "Warning"
+msgstr "Avertissement"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_purchase_clean_wizard
+msgid "YYYY-MM-DD"
+msgstr "AAAA-MM-JJ"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_confirm_deletion_wizard_form
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_mass_clean_confirm_wizard
+msgid "Yes"
+msgstr "Oui"
+
+#. module: zehntech_mass_delete_records
+#: model_terms:ir.ui.view,arch_db:zehntech_mass_delete_records.view_data_deletion_confirmation_wizard_form
+msgid "Yes, Delete All"
+msgstr "Oui, supprimer tout"
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid ""
+"You do not have permission to clean invoicing, payments and journal entries."
+msgstr ""
+"Vous n'êtes pas autorisé à nettoyer la facturation, les paiements et les "
+"écritures de journal."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/audit_log.py:0
+#, python-format
+msgid "You do not have permission to delete Audit Log entries."
+msgstr "Vous n'êtes pas autorisé à supprimer les entrées du journal d'audit."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "You do not have permission to delete BOMs."
+msgstr "Vous n’êtes pas autorisée à supprimer des nomenclatures."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid "You do not have permission to delete Manufacturing Orders."
+msgstr "Vous n’êtes pas autorisée à supprimer des ordres de fabrication."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "You do not have permission to delete Purchase orders."
+msgstr "Vous n’avez pas l’autorisation de supprimer les bons de commande."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "You do not have permission to delete Sales orders."
+msgstr "Vous n’êtes pas autorisé à supprimer des commandes client."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#: code:addons/zehntech_mass_delete_records/wizards/clean_wizard.py:0
+#, python-format
+msgid "You do not have permission to delete projects or tasks."
+msgstr "Vous n’êtes pas autorisée à supprimer des projets ou des tâches."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "You do not have permission to delete projects."
+msgstr "Vous n’êtes pas autorisée à supprimer des projets."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/wizards/purchase_clean_wizard.py:0
+#, python-format
+msgid "You do not have permission to delete purchase orders by date ranges."
+msgstr ""
+"Vous n’êtes pas autorisé à supprimer les bons de commande par plages de "
+"dates."
+
+#. module: zehntech_mass_delete_records
+#. odoo-python
+#: code:addons/zehntech_mass_delete_records/models/clean_model.py:0
+#, python-format
+msgid "You do not have permission to delete transfers."
+msgstr "Vous n’êtes pas autorisée à supprimer des transferts."

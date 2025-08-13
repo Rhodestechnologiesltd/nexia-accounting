@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Action to open the tree view of account.deletion.audit.log -->
+        <record id="action_account_deletion_audit_log" model="ir.actions.act_window">
+            <field name="name">Invoice Deletion Logs</field>
+            <field name="res_model">account.deletion.audit.log</field>
+            <field name="view_mode">tree</field>
+            <field name="context">{}</field>
+        </record>
+        <!-- Tree view for account.deletion.audit.log -->
+        <record id="view_account_deletion_audit_log_tree" model="ir.ui.view">
+            <field name="name">account.deletion.audit.log.tree</field>
+            <field name="model">account.deletion.audit.log</field>
+            <field name="arch" type="xml">
+                <tree create="false">
+                    <!-- <field name="id"/> -->
+                    <field name="record_id"/>
+                    <field name="record_type"/>
+                    <field name="state"/>
+                    <field name="additional_info"/>
+                    <field name="deletion_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Menu item under Invoicing -->
+        <menuitem id="menu_account_deletion_audit_log"
+                  name="Invoice Deletion Logs"
+                  parent="account.menu_finance"
+                  action="action_account_deletion_audit_log"
+                  sequence="20" />
+    </data>
+</odoo>

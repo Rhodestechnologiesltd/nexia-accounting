@@ -1,0 +1,22 @@
+<odoo>
+    <record id="view_data_deletion_confirmation_wizard_form" model="ir.ui.view">
+        <field name="name">data.deletion.confirmation.wizard.form</field>
+        <field name="model">data.deletion.confirmation.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Confirm Deletion">
+                <sheet>
+                    <div class="text-center my-3" style="margin-right: 51px;">
+                        <h2 class="text-danger font-weight-bold">Warning</h2>
+                    </div>
+                    <div class="oe_title text-center my-3" style="margin-left: 105px;">
+                        <field name="confirmation_message" readonly="1"/>
+                    </div>
+                    <footer>
+                        <button string="Yes, Delete All" type="object" name="action_confirm" class="btn btn-danger mr-2"/>
+                       <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

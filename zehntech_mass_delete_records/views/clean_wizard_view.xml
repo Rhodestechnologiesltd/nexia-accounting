@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_mass_clean_wizard" model="ir.ui.view">
+        <field name="name">mass.clean.wizard.form</field>
+        <field name="model">mass.clean.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Mass Clean Data">
+                <sheet>
+                    <!-- CLEAN ALL SECTION -->
+                    <group string="All Modules Cleanup" col="4">
+                        <field name="clean_all" widget="boolean" string="Delete all data" onchange="onCleanAllChange()"/>
+                    </group>
+
+                    <!-- SALES AND PURCHASES SECTIONS SIDE-BY-SIDE -->
+                    <group col="4">
+                        <group string="Sales Cleanup" colspan="2">
+                            <field name="clean_sales" string="Delete sales and transfers"/>
+                        </group>
+                        <group string="Purchases Cleanup" colspan="2">
+                            <field name="clean_purchases" string="Delete purchases and transfers"/>
+                        </group>
+
+                    </group>            
+                    <!-- TRANSFERS SECTION -->
+                    <group string="Transfers Cleanup" col="4">
+                        <field name="clean_only_transfers" string="Delete only transfers"/>
+                    </group>
+
+                    <!-- PROJECTS AND TASKS SECTIONS SIDE-BY-SIDE -->
+                    <group col="4">
+                        <!-- Target Specific Projects -->
+                        <group string="Projects Cleanup" colspan="2">
+                            <field name="project_ids" widget="many2many_tags" options="{'no_create': True}" string=" Select projects to clean"/>
+                        </group>
+
+                        <!-- Target Specific Tasks -->
+                        <group string="Tasks Cleanup" colspan="2">
+                            <field name="task_ids" widget="many2many_tags" options="{'no_create': True}" string="Select tasks to clean"/>
+                        </group>
+                    </group>
+                    <group col="4">
+                        <group string="BOM and Manufacturing Orders Cleanup"  colspan="2">
+                            <field name="clean_bom" string=" Delete BOM and manufacturing orders"/>
+                        </group>
+                        <group string="Manufacturing Orders Cleanup" colspan="2">
+                            <field name="clean_only_manufacturing" string="Delete only manufacturing orders"/>
+                        </group>
+
+                    </group>
+                     <group col="4">
+                        <group string="Invoicing,Journals and Payment Cleanup"  colspan="2">
+                            <field name="clean_invoicing" string="Delete invoicing data,payment and journal entries"/>
+                        </group>
+                        <group string="Journal Entries Cleanup" colspan="2">
+                            <field name="clean_only_journal_entries" string="Delete only journal entries"/>
+                        </group>
+
+                    </group>
+
+
+                </sheet>
+
+                <!-- FOOTER WITH BUTTONS -->
+                <footer>
+                    <button string="Clean Data" type="object" name="action_clean_data" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

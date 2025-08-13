@@ -1,0 +1,46 @@
+<odoo>
+    <record id="view_purchase_clean_wizard" model="ir.ui.view">
+        <field name="name">purchase.clean.wizard.form</field>
+        <field name="model">purchase.clean.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Clean Purchase Orders">
+                <group>
+                    <div>
+                        <label for="delete_all">Delete All Purchase Orders</label>
+                        <field name="delete_all" widget="boolean"/>
+                    </div>
+                    <div>
+                        <label for="delete_by_status">Delete by Status</label>
+                        <field name="delete_by_status" widget="boolean"/>
+                    </div>
+                    <!-- Conditional visibility for status field -->
+                    <div>
+                        <label for="status">Status</label>
+                        <field name="status" invisible="not delete_by_status"/>
+                    </div>
+                    <div>
+                        <label for="delete_by_expected_arrival">Delete by Expected Arrival Date</label>
+                        <field name="delete_by_expected_arrival" widget="boolean"/>
+                    </div>
+                    <!-- Date Range for Expected Arrival, conditional visibility -->
+                    <group invisible="not delete_by_expected_arrival">
+                        <field name="start_expected_arrival" 
+                               string="Start Expected Arrival Date" 
+                               placeholder="YYYY-MM-DD"
+                               required="delete_by_expected_arrival"
+                               condition="delete_by_expected_arrival"/>
+                        <field name="end_expected_arrival" 
+                               string="End Expected Arrival Date" 
+                               placeholder="YYYY-MM-DD"
+                               required="delete_by_expected_arrival"
+                               condition="delete_by_expected_arrival"/>
+                    </group>
+                </group>
+                <footer>
+                    <button string="Confirm" type="object" name="action_confirm_clean" class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

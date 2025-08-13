@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <record id="view_mass_clean_confirmation_wizard_form" model="ir.ui.view">
+            <field name="name">mass.clean.confirmation.wizard.form</field>
+            <field name="model">mass.clean.confirmation.wizard</field>  <!-- Correct model name -->
+            <field name="arch" type="xml">
+                <form string="Confirm Deletion">
+                    <sheet>
+                        <group>
+                            <field name="summary_text" widget="text" readonly="1"/>  <!-- Display summary text -->
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Delete" type="object" name="action_confirm_deletion" class="btn-primary" />
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
