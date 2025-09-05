@@ -18,7 +18,7 @@ class ResPartner(models.Model):
     transaction_type = fields.Selection([('B2B', 'B2B'),
                                          ('B2G', 'B2G'),
                                          ('B2C', 'B2C'),
-                                         ('B2E', 'B2C'),
+                                         ('B2E', 'B2E'),
                                          ('EXP', 'EXP')],
                                         string="Transaction Type", copy=False, tracking=True)
     buyer_type = fields.Selection([('VATR', 'VATR'),
